@@ -1,157 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#080a12">
-<meta name="description" content="Create chilling Hindi and English horror stories, scene prompts, and save your darkest ideas with Horror Story AI.">
-<title>Horror Story AI — Unleash Chilling Stories</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Horror Story AI — डर की कहानियाँ</title>
+<meta name="description" content="Hindi, Hinglish aur English horror stories, scene prompts aur apni kahaniyan save karo.">
+<meta name="theme-color" content="#2a0e13">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&family=Mukta:wght@400;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#080a12;--panel:rgba(19,23,36,.72);--panel2:rgba(12,15,25,.78);--line:rgba(255,255,255,.12);--text:#f4f5fb;--muted:#a8afc2;--red:#ff344d;--red2:#b70f35;--purple:#9a6bff;--shadow:0 18px 55px #0008}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#31172b 0,transparent 34%),radial-gradient(ellipse at 0% 35%,#101f36 0,transparent 34%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;line-height:1.55;min-height:100vh}button,input,select,textarea{font:inherit}button{cursor:pointer;color:inherit;font-family:inherit}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,92%);margin:auto}.nav{position:sticky;top:0;z-index:10;background:#080a12d9;backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.navin{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:70px}.brand{display:flex;align-items:center;gap:10px;font-weight:850;letter-spacing:.3px}.skull{display:grid;place-items:center;width:38px;height:38px;border-radius:13px;background:linear-gradient(145deg,#ff344d,#83122d);box-shadow:0 6px 24px #ff344d40;font-size:20px}.brand span:last-child em{font-style:normal;color:var(--red)}.navlinks{display:flex;gap:22px;color:var(--muted);font-size:13px}.navlinks a:hover{color:white}.navactions{display:flex;gap:8px}.iconbtn,.secondary{border:1px solid var(--line);background:#ffffff08;color:var(--text);border-radius:12px;padding:10px 13px}.menu{display:none}.hero{padding:52px 0 28px}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:25px;align-items:center}.glass{background:linear-gradient(135deg,#ffffff0c,#ffffff03);border:1px solid var(--line);box-shadow:var(--shadow);backdrop-filter:blur(18px);border-radius:24px}.hero-copy{padding:35px 12px 35px 4px}.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid #ff344d55;background:#ff344d12;color:#ff9aa7;border-radius:999px;padding:7px 12px;font-size:12px;font-weight:700}.dot{width:7px;height:7px;background:var(--red);border-radius:50%;box-shadow:0 0 12px var(--red)}h1{font-size:clamp(38px,5vw,64px);line-height:1.04;letter-spacing:-2px;margin:22px 0 16px}h1 span{color:var(--red);text-shadow:0 0 30px #ff344d33}.lead{color:#c0c5d3;max-width:540px;font-size:16px}.btnrow{display:flex;gap:12px;flex-wrap:wrap;margin:25px 0}.primary{border:0;color:white;font-weight:750;padding:13px 19px;border-radius:12px;background:linear-gradient(115deg,var(--red),var(--red2));box-shadow:0 8px 26px #ff344d30;transition:transform .2s,filter .2s}.primary:hover{transform:translateY(-2px);filter:brightness(1.1)}.hero-art{min-height:370px;position:relative;overflow:hidden;padding:22px;background:linear-gradient(180deg,#0b101a66,#080a12ed),url('https://images.unsplash.com/photo-1509248961158-e54f6934749c?auto=format&fit=crop&w=1200&q=85') center/cover}.art-label{position:absolute;left:22px;right:22px;bottom:22px;padding:18px;border:1px solid #ffffff20;border-radius:18px;background:#090b14b8;backdrop-filter:blur(14px)}.art-label small{color:#ff9aa7;text-transform:uppercase;letter-spacing:1.4px}.art-label h3{margin:5px 0}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}.stat{padding:14px;border-radius:16px;border:1px solid var(--line);background:#ffffff06}.stat strong{display:block;font-size:20px}.stat span{font-size:12px;color:var(--muted)}section{padding:27px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:15px;margin-bottom:17px}.section-head h2{margin:0;font-size:clamp(23px,3vw,31px);letter-spacing:-.7px}.section-head p{margin:4px 0 0;color:var(--muted);font-size:13px}.categories{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}.category{padding:16px 12px;text-align:left;min-height:128px;transition:.2s;color:var(--text)}.category strong{color:var(--text)}.category:hover,.category.active{border-color:#ff344d99;transform:translateY(-3px);background:linear-gradient(145deg,#ff344d18,#ffffff05)}.cat-emoji{font-size:24px}.category strong{display:block;margin-top:9px;font-size:13px}.category small{color:var(--muted);font-size:11px}.workspace{display:grid;grid-template-columns:.9fr 1.1fr;gap:16px}.formcard,.resultcard{padding:23px}.formcard h2,.resultcard h2{font-size:21px;margin:0 0 4px}.sub{color:var(--muted);font-size:13px;margin:0 0 20px}.field{margin:15px 0}.field label{display:block;font-size:12px;font-weight:700;color:#d8dbea;margin-bottom:7px}.field input,.field select,.field textarea{width:100%;background:#070a12a8;border:1px solid #ffffff20;border-radius:11px;color:var(--text);padding:12px 13px;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:#ff5267;box-shadow:0 0 0 3px #ff344d16}.field select option{background:#101321}.segmented{display:flex;gap:7px}.segmented button{flex:1;border:1px solid var(--line);background:#ffffff05;color:var(--muted);padding:9px 7px;border-radius:10px;font-size:12px}.segmented button.active{background:#ff344d1e;border-color:#ff344d;color:white}.full{width:100%}.hint{font-size:11px;color:var(--muted);margin-top:9px}.result-top{display:flex;justify-content:space-between;gap:12px;align-items:center}.toolrow{display:flex;gap:7px;flex-wrap:wrap}.toolrow button{font-size:12px;padding:8px 10px}.storybox{margin-top:15px;padding:18px;border-radius:16px;border:1px solid var(--line);background:linear-gradient(150deg,#080b13dd,#10132199);min-height:300px;max-height:470px;overflow:auto;white-space:pre-wrap;color:#d7d9e5;font-size:14px}.storybox h3{color:white;margin:0 0 12px}.empty{display:grid;place-items:center;text-align:center;min-height:260px;color:var(--muted)}.empty .big{font-size:43px;margin-bottom:8px}.result-meta{display:flex;gap:7px;flex-wrap:wrap;margin-top:13px}.pill{border:1px solid var(--line);background:#ffffff07;color:var(--muted);font-size:11px;padding:5px 9px;border-radius:999px}.library{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.storytile{padding:17px}.storytile .tiletop{display:flex;justify-content:space-between;gap:10px}.storytile h3{font-size:16px;margin:10px 0 5px}.storytile p{font-size:12px;color:var(--muted);margin:0 0 14px}.tile-actions{display:flex;gap:7px}.tile-actions button{font-size:11px;padding:7px 9px}.prompts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.prompt{padding:17px}.prompt h3{font-size:15px;margin:8px 0}.prompt p{color:var(--muted);font-size:12px}.prompt .secondary{font-size:12px}.footer{border-top:1px solid var(--line);margin-top:30px;padding:26px 0 36px;color:var(--muted);font-size:12px}.footerin{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;z-index:30;background:#171c2a;border:1px solid #ffffff24;color:white;padding:12px 17px;border-radius:12px;box-shadow:var(--shadow);transition:.25s}.toast.show{opacity:1;transform:translate(-50%,0)}.light{--bg:#edf0f8;--panel:rgba(255,255,255,.78);--panel2:#fff;--line:rgba(24,31,52,.15);--text:#161a28;--muted:#5e6578;--shadow:0 18px 45px #1c244012;background:radial-gradient(ellipse at 80% 0%,#ffdbe4 0,transparent 34%),#edf0f8}.light .nav{background:#eef0f8df}.light .field input,.light .field select,.light .field textarea,.light .storybox{background:#ffffffc9;color:#161a28}.light .field select option{background:white}.light .storybox{color:#34384a}.light .art-label{background:#111522c9;color:white}.light .stat{background:#ffffff88}
-@media(max-width:900px){.hero-grid,.workspace{grid-template-columns:1fr}.hero-copy{padding:20px 0}.hero-art{min-height:310px}.categories{grid-template-columns:repeat(3,1fr)}.library,.prompts{grid-template-columns:repeat(2,1fr)}.navlinks{gap:12px}.hero{padding-top:28px}}
-@media(max-width:600px){.wrap{width:min(100% - 28px,1160px)}.navin{min-height:62px}.navlinks{display:none;position:absolute;top:62px;left:0;right:0;padding:16px 22px;background:#0a0c15;border-bottom:1px solid var(--line);flex-direction:column}.navlinks.open{display:flex}.menu{display:block}.navactions .theme-label{display:none}.brand{font-size:13px}.skull{width:34px;height:34px}.hero{padding-top:19px}.hero-copy{padding:18px 0}.lead{font-size:14px}h1{letter-spacing:-1.3px}.hero-art{min-height:260px;padding:14px}.art-label{left:14px;right:14px;bottom:14px}.stats{gap:7px}.stat{padding:10px}.stat strong{font-size:17px}.stat span{font-size:10px}.categories{grid-template-columns:repeat(2,1fr);gap:8px}.category{min-height:115px}.formcard,.resultcard{padding:16px}.result-top{align-items:flex-start;flex-direction:column}.storybox{min-height:250px}.library,.prompts{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column}.btnrow .primary,.btnrow .secondary{flex:1;text-align:center}.footerin{flex-direction:column}}
+:root{--wall:#2a0e13;--wall2:#3a161c;--bone:#eadfcb;--dim:#b9a58f;--lamp:#e3a64b;--mold:#6f8f78;--line:rgba(234,223,203,.18);--card:rgba(0,0,0,.28)}
+:root[data-theme=light]{--wall:#eadfcb;--wall2:#dccfb6;--bone:#2a0e13;--dim:#6a4f45;--lamp:#a8531a;--mold:#3f6650;--line:rgba(42,14,19,.22);--card:rgba(255,255,255,.45)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;background:var(--wall);color:var(--bone);font:17px/1.7 'Mukta',system-ui,sans-serif;padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}
+h1,h2,h3,.serif{font-family:'Tiro Devanagari Hindi',Georgia,serif;font-weight:400;line-height:1.2;margin:0}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:920px;margin:0 auto;padding:0 20px}
+section{padding:64px 0}
+header{position:sticky;top:0;z-index:20;background:var(--wall);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:10px;height:56px}
+.logo{font-family:'Tiro Devanagari Hindi',serif;font-size:19px}
+.nav{display:flex;gap:18px;overflow-x:auto;scrollbar-width:none;font-size:15px;color:var(--dim)}
+.nav::-webkit-scrollbar{display:none}
+.nav a{white-space:nowrap;padding:4px 0}
+.nav a:hover,.nav a:focus-visible{color:var(--lamp)}
+button,select,input{font:inherit;color:inherit}
+.btn{background:var(--lamp);color:#1d0a0e;border:0;border-radius:999px;padding:11px 22px;font-weight:600;cursor:pointer}
+.btn.ghost{background:none;color:var(--bone);border:1px solid var(--line)}
+.btn:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible,.chip:focus-visible{outline:2px solid var(--lamp);outline-offset:2px}
+#theme{background:none;border:1px solid var(--line);border-radius:999px;padding:4px 12px;cursor:pointer;font-size:14px}
+/* hero: torch light follows finger */
+.hero{position:relative;min-height:calc(100svh - 56px);display:flex;align-items:center;overflow:hidden;padding:40px 0}
+.hero::before{content:"";position:absolute;inset:0;pointer-events:none;z-index:2;background:radial-gradient(circle 190px at var(--x,50%) var(--y,40%),transparent 0,rgba(10,3,5,.55) 55%,rgba(10,3,5,.93) 100%);transition:background .08s}
+:root[data-theme=light] .hero::before{background:radial-gradient(circle 220px at var(--x,50%) var(--y,40%),transparent 0,rgba(42,14,19,.25) 60%,rgba(42,14,19,.6) 100%)}
+.hero .wrap{position:relative;z-index:1}
+.hero h1{font-size:clamp(40px,10vw,88px);max-width:12ch}
+.hero p{max-width:34ch;color:var(--dim);font-size:19px;margin:20px 0 28px}
+.hero .row{display:flex;gap:12px;flex-wrap:wrap;position:relative;z-index:3}
+.feat{position:relative;z-index:3;margin-top:44px;border-left:3px solid var(--lamp);padding-left:16px;max-width:30ch}
+.feat small{color:var(--dim);display:block}
+.feat b{font-family:'Tiro Devanagari Hindi',serif;font-weight:400;font-size:22px;display:block}
+@media(prefers-reduced-motion:reduce){.hero::before{transition:none}html{scroll-behavior:auto}}
+h2{font-size:clamp(28px,6vw,40px);margin-bottom:6px}
+.sub{color:var(--dim);margin:0 0 28px}
+/* categories */
+.cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:0;border-top:1px solid var(--line)}
+.cat{display:flex;gap:16px;align-items:center;text-align:left;background:none;border:0;border-bottom:1px solid var(--line);padding:18px 4px;cursor:pointer;width:100%}
+.cat .ic{font-size:30px;width:44px;text-align:center}
+.cat b{font-family:'Tiro Devanagari Hindi',serif;font-weight:400;font-size:21px;display:block}
+.cat small{color:var(--dim)}
+.cat:hover,.cat.on{background:var(--wall2)}
+.cat.on b{color:var(--lamp)}
+/* generator */
+.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+label{display:block;font-size:14px;color:var(--dim);margin:16px 0 6px}
+input[type=text],select{width:100%;background:var(--wall);border:1px solid var(--line);border-radius:10px;padding:12px;font-size:16px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid var(--line);border-radius:999px;padding:7px 16px;cursor:pointer;background:none;font-size:15px}
+.chip.on{background:var(--lamp);color:#1d0a0e;border-color:var(--lamp)}
+.note{font-size:14px;color:var(--dim);margin:12px 0 0}
+#story{margin-top:26px;border-top:1px solid var(--line);padding-top:22px}
+.page{font-family:'Tiro Devanagari Hindi',Georgia,serif;font-size:19px;line-height:1.95;white-space:pre-wrap;max-width:62ch;background:var(--card);padding:22px;border-radius:14px;border:1px solid var(--line)}
+.page h3{font-size:26px;margin-bottom:12px;color:var(--lamp)}
+.empty{color:var(--dim);padding:18px 0}
+.acts{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.acts .btn{padding:9px 18px;font-size:15px}
+.saved{display:grid;gap:12px}
+.item{border:1px solid var(--line);border-radius:12px;padding:16px;background:var(--card)}
+.item h3{font-size:20px}
+.item p{margin:6px 0 10px;color:var(--dim);font-size:15px}
+/* prompts */
+.pr{border-top:1px solid var(--line);padding:16px 0;display:flex;gap:14px;justify-content:space-between;align-items:flex-start}
+.pr:last-child{border-bottom:1px solid var(--line)}
+.pr b{display:block;font-family:'Tiro Devanagari Hindi',serif;font-weight:400;font-size:19px;color:var(--lamp)}
+.pr span{color:var(--dim);font-size:15px}
+footer{border-top:1px solid var(--line);padding:30px 0 50px;color:var(--dim);font-size:14px}
+#toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom));transform:translateX(-50%);background:var(--lamp);color:#1d0a0e;padding:9px 20px;border-radius:999px;font-weight:600;opacity:0;pointer-events:none;transition:opacity .2s;z-index:30}
+#toast.on{opacity:1}
 </style>
 </head>
 <body>
-<header class="nav"><div class="wrap navin">
-<a class="brand" href="#home"><span class="skull">☠</span><span>HORROR <em>STORY</em> AI</span></a>
-<nav class="navlinks" id="navlinks"><a href="#home">Home</a><a href="#categories">Categories</a><a href="#generator">Generator</a><a href="#library">My Stories</a><a href="#prompts">Scene Prompts</a></nav>
-<div class="navactions"><button class="iconbtn menu" id="menuBtn" aria-label="Open menu">☰</button><button class="iconbtn" id="themeBtn" aria-label="Toggle theme">☾ <span class="theme-label">Theme</span></button></div>
-</div></header>
-<main>
-<div class="wrap">
-<section class="hero" id="home"><div class="hero-grid">
-<div class="hero-copy"><div class="eyebrow"><span class="dot"></span> YOUR DARK IMAGINATION, UNLEASHED</div>
-<h1>Unleash Chilling<br><span>Horror</span> Stories<br>with AI</h1>
-<p class="lead">Create eerie Hindi horror stories, haunted mysteries, and cinematic scene prompts for your next unforgettable video.</p>
-<div class="btnrow"><a class="primary" href="#generator">Generate a Story ✦</a><a class="secondary" href="#categories">Explore Categories ↘</a></div>
-<div class="stats"><div class="stat"><strong>6</strong><span>Horror categories</span></div><div class="stat"><strong>2</strong><span>Languages</span></div><div class="stat"><strong>∞</strong><span>Ideas to explore</span></div></div>
-</div>
-<div class="hero-art glass"><div class="art-label"><small>Tonight's featured nightmare</small><h3>“The House That Remembers”</h3><span style="color:#c4c9d7;font-size:12px">Some doors should never be opened.</span></div></div>
+<header><div class="wrap"><a class="logo" href="#home">☠ Horror Story AI</a>
+<nav class="nav"><a href="#categories">Categories</a><a href="#generator">Generator</a><a href="#library">My Stories</a><a href="#prompts">Scene Prompts</a></nav>
+<button id="theme" aria-label="Theme badlo">☾ Theme</button></div></header>
+
+<main id="home">
+<div class="hero" id="hero"><div class="wrap">
+<h1>वो दरवाज़ा मत खोलना</h1>
+<p>Hindi, Hinglish aur English mein darawni kahaniyan banao, aur apne video ke liye scene prompts lo.</p>
+<div class="row"><a class="btn" href="#generator">Kahani banao</a><a class="btn ghost" href="#categories">Categories dekho</a></div>
+<div class="feat"><small>Aaj ki kahani</small><b>“वो हवेली जो सब याद रखती है”</b></div>
+</div></div>
+
+<section id="categories"><div class="wrap">
+<h2>Darr ki duniya chuno</h2><p class="sub">Category chunte hi generator mein set ho jaati hai.</p>
+<div class="cats" id="cats"></div>
 </div></section>
-<section id="categories"><div class="section-head"><div><h2>Choose your nightmare</h2><p>Pick a category to set the mood for your next story.</p></div><span class="pill">6 DARK WORLDS</span></div><div class="categories" id="categoryGrid"></div></section>
-<section id="generator"><div class="section-head"><div><h2>Story Generator</h2><p>Shape the idea. Set the fear level. Let the story unfold.</p></div><span class="pill">LOCAL DEMO · NO API KEY</span></div>
-<div class="workspace"><div class="glass formcard"><h2>Create your story</h2><p class="sub">Your ideas stay in this browser.</p>
-<div class="field"><label for="storyTitle">STORY TITLE OR IDEA</label><input id="storyTitle" maxlength="100" placeholder="e.g. Sunsaan road par aakhri bus"></div>
-<div class="field"><label for="categorySelect">HORROR CATEGORY</label><select id="categorySelect"></select></div>
-<div class="field"><label>STORY LENGTH</label><div class="segmented" id="lengthButtons"><button data-length="Short" class="active">Short</button><button data-length="Medium">Medium</button><button data-length="Long">Long</button></div></div>
-<div class="field"><label for="languageSelect">LANGUAGE</label><select id="languageSelect"><option value="hi">Hindi</option><option value="en">English</option><option value="hinglish">Hinglish</option></select></div>
-<div class="field"><label for="toneSelect">FEAR STYLE</label><select id="toneSelect"><option value="suspense">Slow-burn suspense</option><option value="supernatural">Supernatural terror</option><option value="psychological">Psychological thriller</option><option value="folklore">Indian folklore</option></select></div>
-<button class="primary full" id="generateBtn">✦ Generate Horror Story</button><p class="hint">This free demo uses built-in story patterns. It does not call a paid AI API.</p>
+
+<section id="generator"><div class="wrap">
+<h2>Story generator</h2><p class="sub">Idea likho, darr ka style chuno, kahani taiyaar.</p>
+<div class="panel">
+<label for="idea">Kahani ka title ya idea</label>
+<input type="text" id="idea" placeholder="जैसे: आख़िरी कमरे की खिड़की">
+<label for="cat">Category</label><select id="cat"></select>
+<label>Length</label><div class="chips" id="len"></div>
+<label>Language</label><div class="chips" id="lang"></div>
+<label>Fear style</label><div class="chips" id="sty"></div>
+<div class="acts"><button class="btn" id="gen">Story banao</button></div>
+<p class="note">Ye free demo hai: built-in story patterns use hote hain, koi paid API nahi.</p>
 </div>
-<div class="glass resultcard"><div class="result-top"><div><h2>Your chilling tale</h2><p class="sub" style="margin:4px 0 0">Generated story appears here.</p></div><div class="toolrow"><button class="secondary" id="copyBtn">▣ Copy</button><button class="secondary" id="downloadBtn">↓ TXT</button><button class="secondary" id="saveBtn">♡ Save</button></div></div>
-<div class="storybox" id="storyOutput" aria-live="polite"><div class="empty"><div><div class="big">🌘</div><strong>Your next nightmare starts here</strong><p>Enter an idea and press Generate.</p></div></div></div><div class="result-meta" id="resultMeta"><span class="pill">Awaiting inspiration</span></div>
-</div></div></section>
-<section id="library"><div class="section-head"><div><h2>Saved stories</h2><p>Your favorites are stored on this device using local storage.</p></div><button class="secondary" id="clearSaved">Clear saved</button></div><div class="library" id="savedGrid"></div></section>
-<section id="prompts"><div class="section-head"><div><h2>Scene prompt lab</h2><p>Copy a visual prompt to build cinematic scenes for your horror videos.</p></div></div><div class="prompts" id="promptGrid"></div></section>
-</div></main>
-<footer class="footer"><div class="wrap footerin"><span>☠ HORROR STORY AI · Built for dark imaginations.</span><span>Free static demo · Stories are fictional unless you verify their sources.</span><span><a href="#home">Back to top ↑</a></span></div></footer>
-<div class="toast" id="toast" role="status"></div>
+<div id="story"><div class="empty" id="ph">Abhi koi kahani nahi hai. Idea likho aur “Story banao” dabao.</div><div id="out" hidden>
+<div class="page" id="page"></div>
+<div class="acts"><button class="btn ghost" id="copy">Copy</button><button class="btn ghost" id="txt">TXT download</button><button class="btn" id="save">Save karo</button></div></div></div>
+</div></section>
+
+<section id="library"><div class="wrap">
+<h2>Saved stories</h2><p class="sub">Ye aapke is phone/browser mein hi save rehti hain.</p>
+<div class="saved" id="lib"></div>
+<div class="acts"><button class="btn ghost" id="clear">Saari saved stories hatao</button></div>
+</div></section>
+
+<section id="prompts"><div class="wrap">
+<h2>Scene prompt lab</h2><p class="sub">Prompt copy karo aur image ya video tool mein paste karo.</p>
+<div id="prl"></div>
+</div></section>
+</main>
+
+<footer><div class="wrap">Horror Story AI. Saari kahaniyan kaalpanik hain. <a href="#home" style="color:var(--lamp)">Upar jao</a></div></footer>
+<div id="toast" role="status"></div>
+
 <script>
-const categories=[
-{id:"haunted",name:"Haunted House",emoji:"🏚️",desc:"Rooms with a past"},
-{id:"forest",name:"Forest Horror",emoji:"🌲",desc:"Lost beyond the path"},
-{id:"real",name:"Real Horror",emoji:"🕯️",desc:"Stories that feel real"},
-{id:"urban",name:"Urban Legends",emoji:"🌃",desc:"Whispers after dark"},
-{id:"cursed",name:"Cursed Objects",emoji:"🪆",desc:"Never touch the relic"},
-{id:"ghost",name:"Ghost Stories",emoji:"👻",desc:"The unseen is near"}
-];
-const scenePrompts=[
-{icon:"🏚️",title:"Abandoned Haveli",text:"Cinematic abandoned Indian haveli at midnight, broken wooden doors, moonlight cutting through drifting fog, one upstairs window glowing dim red, twisted trees, realistic textures, deep shadows, slow dolly-in, atmospheric horror, 16:9, no text."},
-{icon:"🌫️",title:"Sunsaan Road",text:"A deserted Indian highway under a pale full moon, flickering sodium streetlights, thick ground fog, a distant human silhouette standing unnaturally still, wet asphalt reflecting cold blue light, cinematic thriller frame, realistic, 16:9, no text."},
-{icon:"🪞",title:"Mirror Apparition",text:"A frightened person in a dim old bathroom staring into a cracked antique mirror; the reflection shows a shadowy figure directly behind them, although the room is empty, subtle supernatural detail, realistic skin and glass, dramatic low-key lighting, 16:9, no text."},
-{icon:"🌲",title:"Whispering Forest",text:"Dense Indian forest at night, ancient trees twisted over a narrow muddy path, flashlight beam fading into blue mist, vague shadow between tree trunks, floating dust, suspenseful wide shot, photoreal cinematic horror, 16:9, no text."},
-{icon:"🚪",title:"The Moving Door",text:"Close-up of a weathered wooden door in a deserted mansion slowly opening by itself, rusty latch moving, dust floating in a narrow shaft of moonlight, darkness beyond the doorway, tense cinematic composition, ultra realistic, 16:9, no text."},
-{icon:"👣",title:"Footsteps in Dust",text:"Old corridor covered in thick dust with a trail of fresh wet footprints appearing one by one toward the camera, no person visible, flickering ceiling bulb, eerie green-blue shadows, grounded realistic horror cinematography, 16:9, no text."}
-];
-const $=id=>document.getElementById(id);
-let currentStory=null, currentLength="Short", selectedCategory="haunted";
-function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
-function toast(msg){const t=$("toast");t.textContent=msg;t.classList.add("show");clearTimeout(window.toastTimer);window.toastTimer=setTimeout(()=>t.classList.remove("show"),2200)}
-function getSaved(){try{return JSON.parse(localStorage.getItem("horrorStoryAI.saved")||"[]")}catch{return []}}
-function setSaved(items){localStorage.setItem("horrorStoryAI.saved",JSON.stringify(items))}
-function renderCategories(){
- $("categoryGrid").innerHTML=categories.map(c=>`<button class="glass category ${c.id===selectedCategory?"active":""}" data-cat="${c.id}"><span class="cat-emoji">${c.emoji}</span><strong>${c.name}</strong><small>${c.desc}</small></button>`).join("");
- $("categorySelect").innerHTML=categories.map(c=>`<option value="${c.id}" ${c.id===selectedCategory?"selected":""}>${c.name}</option>`).join("");
- document.querySelectorAll("[data-cat]").forEach(b=>b.addEventListener("click",()=>selectCategory(b.dataset.cat)));
-}
-function selectCategory(id){selectedCategory=id;$("categorySelect").value=id;renderCategories()}
-function makeStory(title,cat,length,lang,tone){
- const c=categories.find(x=>x.id===cat)||categories[0];
- const ideas={
- haunted:["purani haveli","band kamra","seedhiyon par sunai deti aahat"],
- forest:["ghane jungle ka raasta","bujhti hui torch","pedon ke beech khadi parchai"],
- real:["raat ki aakhri local","khali platform","ek anjaan musafir"],
- urban:["shehar ki sunsaan gali","band lift","teesri manzil ki khidki"],
- cursed:["purana aaina","mitti se dhaka khilona","taale mein band dibba"],
- ghost:["adhuri chitthi","khali kursi","deewar ke paar se aati awaaz"]
- };
- const places=ideas[cat]||ideas.haunted;const place=places[Math.floor(Math.random()*places.length)];
- const names=["Aarav","Meera","Kabir","Naina","Rohan","Tara"];const person=names[Math.floor(Math.random()*names.length)];
- const titleText=title.trim()||({hi:c.name+" ki aakhri raat",en:"The Last Night at "+c.name,hinglish:c.name+" ki last night"})[lang];
- let paras;
- if(lang==="en"){
- paras=[
- `At 12:17 a.m., ${person} reached ${place}. The locals had one rule: never answer if you hear your name after midnight. Tonight, someone whispered it from the dark.`,
- `At first, ${person} blamed the wind. Then the sound came again—closer, softer, almost familiar. A cold light blinked at the end of the passage, though the building had no electricity.`,
- `The phone showed one new message from an unknown number: “Don't turn around.” ${person} froze. Behind them, a floorboard creaked slowly, as if someone was learning how to walk.`,
- `The door at the end of the passage opened a finger's width. Inside stood ${person}, wearing the same clothes, with the same frightened eyes. The double smiled first.`,
- `${person} ran for the exit. Every corridor returned to the same door. On the wall, fresh letters appeared: “You came here looking for the truth.” The whisper answered from inside the mirror.`,
- `At dawn, the place was empty. On the dusty floor lay a phone, still recording. The final audio contained one breath, one knock—and ${person}'s voice saying, “Let me out.”`
- ];
- }else if(lang==="hinglish"){
- paras=[
- `Raat ke 12:17 par ${person} ${place} tak pahuncha. Locals ki ek warning thi: midnight ke baad agar koi naam lekar bulaye, toh jawab mat dena. Tabhi andhere se kisi ne uska naam liya.`,
- `Pehle laga hawa hogi. Phir wahi awaaz, is baar aur paas se. Passage ke end par ek light blink hui, jabki building ki electricity saalon se band thi.`,
- `Phone par unknown number se message aaya: “Peeche mat dekhna.” ${person} freeze ho gaya. Peeche floorboard dheere se creak hua, jaise koi chalna seekh raha ho.`,
- `Aakhri darwaza khula. Andar ${person} hi khada tha—same kapde, same chehra, bas smile galat thi. Us reflection ne pehle haath hilaya.`,
- `Woh exit ki taraf bhaaga, lekin har corridor usi darwaze par laut aata. Deewar par naye words ubhar aaye: “Tum sach jaanne aaye the.” Mirror ke andar se phir awaaz aayi.`,
- `Subah jagah khaali thi. Dhool mein ek phone recording kar raha tha. Last audio mein ek saans, ek knock, aur ${person} ki awaaz thi: “Mujhe bahar nikalo.”`
- ];
- }else{
- paras=[
- `Raat ke 12:17 baje ${person} ${place} par pahuncha. Wahan ke log ek hi baat kehte the: aadhi raat ke baad agar koi tumhara naam lekar bulaye, toh palat kar mat dekhna. Usi waqt andhere se kisi ne uska naam phusphusaya.`,
- `Pehle ${person} ko laga ki hawa ki awaaz hai. Lekin phir wahi pukaar dobara sunai di—iss baar bilkul kareeb se. Raaste ke aakhir mein ek laal roshni jhilmilayi, jabki wahan bijli ka connection kab ka kat chuka tha.`,
- `Uske phone par anjaan number se ek message aaya: “Peeche mat dekhna.” ${person} ki ungliyan thandi pad gayin. Peeche lakdi ka farsh dheere se charmaraya, jaise koi andhere mein chalna seekh raha ho.`,
- `Aakhri darwaza apne aap khul gaya. Andar jo shakhs khada tha, woh ${person} hi tha—wahi chehra, wahi kapde. Lekin uski aankhon mein ek aisi muskaan thi jo insaan ki ho hi nahi sakti.`,
- `${person} bhaag kar bahar nikalna chahta tha, par har raasta use usi darwaze tak le aata. Deewar par geele akshar ubharne lage: “Tum khud hi wapas aaye ho.” Tabhi aaine ke andar se teen baar dastak hui.`,
- `Subah logon ko jagah khaali mili. Farsh par ek phone pada tha, jiski recording chal rahi thi. Aakhri awaaz ${person} ki thi: “Darwaza kholo… woh mere andar aa gaya hai.”`
- ];
- }
- let count=length==="Short"?3:length==="Medium"?5:6;
- if(tone==="psychological")paras[2]=lang==="en"?"The strangest part was the memory: ${person} had visited this place as a child, but nobody had ever told them it existed.":paras[2];
- const ending=lang==="en"?"THE END":lang==="hinglish"?"KAHANI KHATAM… YA SHURU?":"समाप्त… या शायद शुरुआत?";
- let text=paras.slice(0,count).join("\n\n");
- if(length==="Long")text+="\n\n"+(lang==="en"?"The next morning, the police found the door locked from the inside. On the wood, fresh fingernail marks spelled a date—tomorrow's date.":lang==="hinglish"?"Agli subah darwaza andar se locked mila. Lakdi par nakhun ke nishaan ek date bana rahe the—kal ki date.":"अगली सुबह दरवाज़ा अंदर से बंद मिला। लकड़ी पर नाखूनों से एक तारीख़ खुरची गई थी—कल की तारीख़।");
- return {title:titleText,category:c.name,cat,length,lang,tone,text:text+"\n\n"+ending,date:new Date().toISOString()};
-}
-function renderStory(story){currentStory=story;$("storyOutput").innerHTML=`<h3>${escapeHtml(story.title)}</h3>${escapeHtml(story.text)}`;$("resultMeta").innerHTML=`<span class="pill">${escapeHtml(story.category)}</span><span class="pill">${story.length} story</span><span class="pill">${story.lang==="hi"?"Hindi":story.lang==="en"?"English":"Hinglish"}</span>`}
-function renderSaved(){
- const items=getSaved();const grid=$("savedGrid");
- if(!items.length){grid.innerHTML='<div class="glass storytile"><span class="cat-emoji">♡</span><h3>No saved stories yet</h3><p>Generate a story and tap Save to keep it here on this device.</p></div>';return}
- grid.innerHTML=items.map((s,i)=>`<article class="glass storytile"><div class="tiletop"><span class="pill">${escapeHtml(s.category)}</span><button class="iconbtn" data-delete="${i}" aria-label="Delete saved story">×</button></div><h3>${escapeHtml(s.title)}</h3><p>${escapeHtml(s.text.slice(0,115))}…</p><div class="tile-actions"><button class="secondary" data-open="${i}">Read story</button><button class="secondary" data-copy="${i}">Copy</button></div></article>`).join("");
- grid.querySelectorAll("[data-delete]").forEach(b=>b.onclick=()=>{const a=getSaved();a.splice(+b.dataset.delete,1);setSaved(a);renderSaved();toast("Saved story removed")});
- grid.querySelectorAll("[data-open]").forEach(b=>b.onclick=()=>{renderStory(getSaved()[+b.dataset.open]);$("generator").scrollIntoView({behavior:"smooth"})});
- grid.querySelectorAll("[data-copy]").forEach(b=>b.onclick=()=>copyText(getSaved()[+b.dataset.copy].title+"\n\n"+getSaved()[+b.dataset.copy].text));
-}
-function renderPrompts(){ $("promptGrid").innerHTML=scenePrompts.map((p,i)=>`<article class="glass prompt"><span class="cat-emoji">${p.icon}</span><h3>${p.title}</h3><p>${p.text.slice(0,105)}…</p><button class="secondary" data-prompt="${i}">Copy prompt ↗</button></article>`).join("");document.querySelectorAll("[data-prompt]").forEach(b=>b.onclick=()=>copyText(scenePrompts[+b.dataset.prompt].text))}
-async function copyText(text){try{await navigator.clipboard.writeText(text);toast("Copied to clipboard")}catch{const ta=document.createElement("textarea");ta.value=text;document.body.appendChild(ta);ta.select();document.execCommand("copy");ta.remove();toast("Copied")}}
-$("generateBtn").addEventListener("click",()=>{
- const title=$("storyTitle").value,cat=$("categorySelect").value,lang=$("languageSelect").value,tone=$("toneSelect").value;
- $("generateBtn").disabled=true;$("generateBtn").textContent="Creating your nightmare…";
- setTimeout(()=>{renderStory(makeStory(title,cat,currentLength,lang,tone));$("generateBtn").disabled=false;$("generateBtn").textContent="✦ Generate Horror Story";toast("Your story is ready")},350);
-});
-document.querySelectorAll("[data-length]").forEach(b=>b.addEventListener("click",()=>{currentLength=b.dataset.length;document.querySelectorAll("[data-length]").forEach(x=>x.classList.toggle("active",x===b))}));
-$("copyBtn").onclick=()=>currentStory?copyText(currentStory.title+"\n\n"+currentStory.text):toast("Generate a story first");
-$("downloadBtn").onclick=()=>{if(!currentStory){toast("Generate a story first");return}const blob=new Blob([currentStory.title+"\n\n"+currentStory.text],{type:"text/plain;charset=utf-8"});const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=currentStory.title.replace(/[^a-z0-9\- ]/gi,"").trim().replace(/\s+/g,"-").toLowerCase()+".txt";a.click();URL.revokeObjectURL(a.href);toast("Story downloaded")};
-$("saveBtn").onclick=()=>{if(!currentStory){toast("Generate a story first");return}const a=getSaved();if(a.some(s=>s.title===currentStory.title&&s.text===currentStory.text)){toast("Already saved");return}a.unshift(currentStory);setSaved(a.slice(0,30));renderSaved();toast("Saved on this device")};
-$("clearSaved").onclick=()=>{if(getSaved().length&&confirm("Delete all saved stories from this browser?")){setSaved([]);renderSaved();toast("Saved stories cleared")}};
-$("themeBtn").onclick=()=>{document.body.classList.toggle("light");localStorage.setItem("horrorStoryAI.light",document.body.classList.contains("light"))};
-$("menuBtn").onclick=()=> $("navlinks").classList.toggle("open");
-document.querySelectorAll("#navlinks a").forEach(a=>a.addEventListener("click",()=> $("navlinks").classList.remove("open")));
-if(localStorage.getItem("horrorStoryAI.light")==="true")document.body.classList.add("light");
-renderCategories();renderSaved();renderPrompts();
+const $=s=>document.querySelector(s);
+const CATS=[
+{k:'haveli',ic:'🏚',hi:'वीरान हवेली',h:'Veeran haveli',en:'Abandoned Haveli',d:'Purani haveli, band kamre',p:{hi:'सिंध की पुरानी हवेली',hn:'Sindh ki purani haveli',en:'an old haveli'}},
+{k:'shamshaan',ic:'🔥',hi:'श्मशान की रात',h:'Shamshaan ki raat',en:'Cremation Ground Night',d:'Raakh, dhuan aur saaye',p:{hi:'गाँव का श्मशान',hn:'gaon ka shamshaan',en:'the village cremation ground'}},
+{k:'jungle',ic:'🌲',hi:'जंगल का रास्ता',h:'Jungle ka raasta',en:'Cursed Forest Road',d:'Sunsaan raasta, peeche koi',p:{hi:'जंगल की सुनसान सड़क',hn:'jungle ki sunsaan sadak',en:'a deserted forest road'}},
+{k:'hostel',ic:'🕯',hi:'हॉस्टल का कमरा 13',h:'Hostel ka kamra 13',en:'Hostel Room 13',d:'Raat 3 baje ki awaazein',p:{hi:'हॉस्टल का कमरा नंबर 13',hn:'hostel ka kamra number 13',en:'hostel room 13'}},
+{k:'kuan',ic:'🪣',hi:'पुराना कुआँ',h:'Purana kuan',en:'The Old Well',d:'Andar se aati pukaar',p:{hi:'खेत के पास का पुराना कुआँ',hn:'khet ke paas ka purana kuan',en:'the old well by the fields'}},
+{k:'sheher',ic:'🌃',hi:'शहर की आख़िरी लोकल',h:'Sheher ki aakhri local',en:'Last Local Train',d:'Khaali dabba, ek akeli sawaari',p:{hi:'रात की आख़िरी लोकल',hn:'raat ki aakhri local',en:'the last local train'}}];
+const LENS=[['short','Chhoti',3],['medium','Medium',5],['long','Lambi',8]];
+const LANGS=[['hi','हिंदी'],['hn','Hinglish'],['en','English']];
+const STYLES=[['slow','Slow-burn suspense'],['super','Supernatural terror'],['psy','Psychological thriller'],['folk','Indian folklore']];
+const T={
+hi:{intro:["{p} में उस रात कुछ ठीक नहीं था। हवा रुकी हुई थी, और “{t}” की बात किसी ने ज़ोर से नहीं कही थी।","लोग कहते थे {p} की तरफ़ रात को मत जाना। मगर “{t}” का सच जानने की ज़िद मुझे वहीं ले आई।"],
+beats:["दरवाज़ा अपने आप चरमराया, जैसे किसी ने अंदर से हल्का सा धक्का दिया हो।","दीवार पर मेरी परछाईं थी, पर उसका सिर मेरी तरफ़ नहीं, पीछे की ओर मुड़ा था।","कहीं दूर से किसी औरत के गुनगुनाने की आवाज़ आई। वही धुन, जो माँ सुलाते वक़्त गाती थी।","टॉर्च झपकी और बुझ गई। अँधेरे में बस मेरी साँसें थीं, और एक दूसरी साँस, मुझसे ज़रा धीमी।","फ़र्श पर गीले पैरों के निशान थे। वे मेरी तरफ़ आ रहे थे, लौट नहीं रहे थे।","किसी ने मेरे कान के पास फुसफुसाया, “तुम्हारा नाम हमें बहुत पहले से याद है।”","घड़ी की सुइयाँ उल्टी चलने लगीं, और कमरे की हर चीज़ मुझे देख रही थी।","पीछे मुड़ा तो रास्ता ग़ायब था। दीवार थी, और उस पर ताज़ा उँगलियों के निशान।"],
+sty:{slow:"सब कुछ धीरे-धीरे हो रहा था, और यही सबसे डरावना था।",super:"अब मुझे यक़ीन हो गया था कि यहाँ कोई ज़िंदा नहीं, फिर भी कोई जाग रहा था।",psy:"मैंने ख़ुद से पूछा, क्या ये सच है, या मेरा दिमाग़ मुझे बहला रहा है?",folk:"दादी की बात याद आई: जो जगह नाम लेकर पुकारे, वहाँ कभी जवाब मत देना।"},
+end:["सुबह लोगों ने मुझे बाहर पाया। मैं ठीक था, बस अब मेरी परछाईं मेरे साथ नहीं चलती।","मैं भाग निकला। मगर आज भी हर रात मेरे दरवाज़े पर वही हल्की दस्तक होती है।"]},
+hn:{intro:["{p} mein us raat kuch theek nahi tha. Hawa ruki hui thi, aur “{t}” ki baat kisi ne zor se nahi kahi thi.","Sab kehte the {p} ki taraf raat ko mat jaana. Par “{t}” ka sach jaanne ki zid mujhe wahin le aayi."],
+beats:["Darwaza apne aap charmaraya, jaise kisi ne andar se halka sa dhakka diya ho.","Deewar par meri parchhai thi, par uska sir meri taraf nahi, peeche ki taraf mura tha.","Kahin door se kisi aurat ke gungunane ki awaaz aayi. Wahi dhun, jo maa sulate waqt gaati thi.","Torch jhapki aur bujh gayi. Andhere mein bas meri saansein thi, aur ek doosri saans, mujhse zara dheemi.","Farsh par geele pairon ke nishaan the. Wo meri taraf aa rahe the, laut nahi rahe the.","Kisi ne mere kaan ke paas fusfusaya, “Tumhara naam humein bahut pehle se yaad hai.”","Ghadi ki suiyan ulti chalne lagi, aur kamre ki har cheez mujhe dekh rahi thi.","Peeche mura toh raasta gaayab tha. Deewar thi, aur us par taaza ungliyon ke nishaan."],
+sty:{slow:"Sab kuch dheere-dheere ho raha tha, aur yahi sabse darawna tha.",super:"Ab mujhe yaqeen ho gaya tha ki yahan koi zinda nahi, phir bhi koi jaag raha tha.",psy:"Maine khud se poocha, kya ye sach hai, ya mera dimaag mujhe behla raha hai?",folk:"Dadi ki baat yaad aayi: jo jagah naam lekar pukare, wahan kabhi jawab mat dena."},
+end:["Subah logon ne mujhe bahar paaya. Main theek tha, bas ab meri parchhai mere saath nahi chalti.","Main bhaag nikla. Magar aaj bhi har raat mere darwaze par wahi halki dastak hoti hai."]},
+en:{intro:["Something was wrong in {p} that night. The air was still, and nobody had said “{t}” out loud.","Everyone warned me to stay away from {p} after dark. But I had to know the truth behind “{t}”."],
+beats:["The door creaked open on its own, as if someone inside had nudged it.","My shadow lay on the wall, but its head was turned away from me.","A woman's humming drifted from far away. The same tune my mother sang me to sleep with.","The torch flickered and died. In the dark there was my breathing, and another, slightly slower.","Wet footprints crossed the floor. They were coming toward me, not leaving.","Someone whispered by my ear, “We have known your name for a very long time.”","The clock hands began to run backwards, and everything in the room was watching me.","I turned and the way out was gone. Just a wall, with fresh fingerprints on it."],
+sty:{slow:"Everything happened slowly, and that was the worst part.",super:"I knew now that no one living was here, and yet something was awake.",psy:"I asked myself: is this real, or is my mind lying to me?",folk:"Grandmother's rule came back: if a place calls your name, never answer."},
+end:["At dawn they found me outside. I was fine, except my shadow no longer walks with me.","I ran. But every night since, the same soft knock comes at my door."]}};
+const PROMPTS=[
+['Veeran haveli','Cinematic wide shot of an abandoned Indian haveli at night, peeling plaster, one lantern glowing in a high window, thick fog on the courtyard, 35mm film grain, muted teal and amber'],
+['Shamshaan ka dhuan','Lonely cremation ground at midnight, thin smoke rising, a barefoot figure standing far away in the mist, low camera angle, moonlight, desaturated colours'],
+['Kamre mein parchhai','Dim bedroom, a single shadow on the wall that does not match the person standing, flashlight beam, dust in air, found-footage look'],
+['Purana kuan','Old stone well in a dark field, a pale hand on the rim, crickets-at-night mood, ground fog, cold blue moonlight, shallow depth of field'],
+['Aakhri local','Empty Mumbai local train compartment at 2 AM, flickering tube light, one passenger with face turned away, rain on the windows, cinematic horror'],
+['Jungle ka raasta','Narrow forest road at night, headlights catching a tall silhouette between trees, mist, dead leaves, anamorphic lens flare, tense mood']];
+const st={cat:'haveli',len:'medium',lang:'hn',sty:'slow',cur:null};
+const pick=a=>a[Math.floor(Math.random()*a.length)];
+function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('on');clearTimeout(toast.t);toast.t=setTimeout(()=>t.classList.remove('on'),1600)}
+function chips(el,list,key){el.innerHTML=list.map(x=>`<button class="chip${st[key]===x[0]?' on':''}" data-v="${x[0]}">${x[1]}</button>`).join('');
+ el.onclick=e=>{const b=e.target.closest('.chip');if(!b)return;st[key]=b.dataset.v;chips(el,list,key)}}
+function drawCats(){$('#cats').innerHTML=CATS.map(c=>`<button class="cat${st.cat===c.k?' on':''}" data-k="${c.k}"><span class="ic">${c.ic}</span><span><b>${c.hi}</b><small>${c.d}</small></span></button>`).join('');
+ $('#cat').innerHTML=CATS.map(c=>`<option value="${c.k}"${st.cat===c.k?' selected':''}>${c.ic} ${c.h}</option>`).join('')}
+$('#cats').onclick=e=>{const b=e.target.closest('.cat');if(!b)return;st.cat=b.dataset.k;drawCats();location.hash='generator'};
+$('#cat').onchange=e=>{st.cat=e.target.value;drawCats()};
+chips($('#len'),LENS.map(x=>[x[0],x[1]]),'len');chips($('#lang'),LANGS,'lang');chips($('#sty'),STYLES,'sty');drawCats();
+function make(){
+ const c=CATS.find(x=>x.k===st.cat),L=T[st.lang],n=LENS.find(x=>x[0]===st.len)[2];
+ const title=($('#idea').value.trim())||c.hi;
+ const sub=s=>s.replace(/{p}/g,c.p[st.lang]).replace(/{t}/g,title);
+ const mid=[...L.beats].sort(()=>Math.random()-.5).slice(0,n);
+ mid.splice(Math.ceil(n/2),0,L.sty[st.sty]);
+ const body=[sub(pick(L.intro)),...mid,pick(L.end)].join('\n\n');
+ return {title,cat:c.k,lang:st.lang,text:body,id:Date.now()}}
+$('#gen').onclick=()=>{st.cur=make();$('#ph').hidden=true;$('#out').hidden=false;
+ $('#page').innerHTML='';const h=document.createElement('h3');h.textContent=st.cur.title;const p=document.createElement('div');p.textContent=st.cur.text;$('#page').append(h,p);
+ $('#out').scrollIntoView({behavior:'smooth',block:'start'})};
+$('#copy').onclick=async()=>{try{await navigator.clipboard.writeText(st.cur.title+'\n\n'+st.cur.text);toast('Copy ho gaya')}catch(e){toast('Copy nahi hua')}};
+$('#txt').onclick=()=>{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([st.cur.title+'\n\n'+st.cur.text],{type:'text/plain;charset=utf-8'}));a.download='horror-story.txt';a.click();toast('TXT ban gayi')};
+function lib(){try{return JSON.parse(localStorage.getItem('hsai_lib')||'[]')}catch(e){return[]}}
+function put(a){try{localStorage.setItem('hsai_lib',JSON.stringify(a))}catch(e){toast('Save nahi ho paya')}}
+$('#save').onclick=()=>{const a=lib();a.unshift(st.cur);put(a);drawLib();toast('Save ho gayi')};
+function drawLib(){const a=lib(),el=$('#lib');el.innerHTML='';
+ if(!a.length){el.innerHTML='<div class="empty">Abhi kuch save nahi hai. Story banao aur “Save karo” dabao.</div>';return}
+ a.forEach(s=>{const d=document.createElement('div');d.className='item';
+  const h=document.createElement('h3');h.textContent=s.title;const p=document.createElement('p');p.textContent=s.text.slice(0,110)+'…';
+  const b=document.createElement('div');b.className='acts';
+  const o=document.createElement('button');o.className='btn ghost';o.textContent='Kholo';o.onclick=()=>{st.cur=s;$('#ph').hidden=true;$('#out').hidden=false;$('#page').innerHTML='';const x=document.createElement('h3');x.textContent=s.title;const y=document.createElement('div');y.textContent=s.text;$('#page').append(x,y);location.hash='generator'};
+  const r=document.createElement('button');r.className='btn ghost';r.textContent='Hatao';r.onclick=()=>{put(lib().filter(z=>z.id!==s.id));drawLib()};
+  b.append(o,r);d.append(h,p,b);el.append(d)})}
+$('#clear').onclick=()=>{if(confirm('Saari saved stories hata dein?')){put([]);drawLib()}};
+drawLib();
+$('#prl').innerHTML='';PROMPTS.forEach(([n,t])=>{const r=document.createElement('div');r.className='pr';
+ const d=document.createElement('div');const b=document.createElement('b');b.textContent=n;const s=document.createElement('span');s.textContent=t;d.append(b,s);
+ const c=document.createElement('button');c.className='btn ghost';c.textContent='Copy';c.onclick=async()=>{try{await navigator.clipboard.writeText(t);toast('Prompt copy ho gaya')}catch(e){toast('Copy nahi hua')}};
+ r.append(d,c);$('#prl').append(r)});
+/* theme */
+const root=document.documentElement;
+try{if(localStorage.getItem('hsai_theme')==='light')root.dataset.theme='light'}catch(e){}
+$('#theme').onclick=()=>{const l=root.dataset.theme==='light';if(l)delete root.dataset.theme;else root.dataset.theme='light';try{localStorage.setItem('hsai_theme',l?'dark':'light')}catch(e){}};
+/* torch light: follows finger/mouse, drifts on its own otherwise */
+const hero=$('#hero');let touched=false;
+function torch(x,y){const r=hero.getBoundingClientRect();hero.style.setProperty('--x',(x-r.left)+'px');hero.style.setProperty('--y',(y-r.top)+'px')}
+hero.addEventListener('pointermove',e=>{touched=true;torch(e.clientX,e.clientY)});
+hero.addEventListener('pointerleave',()=>{touched=false});
+if(!matchMedia('(prefers-reduced-motion:reduce)').matches){let t=0;(function f(){if(!touched){t+=.012;const r=hero.getBoundingClientRect();hero.style.setProperty('--x',(r.width*(.5+.3*Math.sin(t)))+'px');hero.style.setProperty('--y',(r.height*(.42+.18*Math.cos(t*1.3)))+'px')}requestAnimationFrame(f)})()}
 </script>
 </body>
 </html>
